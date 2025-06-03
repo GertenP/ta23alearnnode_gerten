@@ -11,6 +11,8 @@ let buildings = ref([
     { name: 'Factory', price: 10000, count: 0, cps: 100 },
 ]);
 
+// Ei ole enam ahmad
+
 let cps = computed(() => {
     return buildings.value.reduce((total, building) => total + building.cps * building.count, 0);
 });
